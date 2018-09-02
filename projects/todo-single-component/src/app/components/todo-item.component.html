@@ -1,0 +1,10 @@
+<!--<p>-->
+  <!--todo-item: {{item.description}}-->
+<!--</p>-->
+
+<mat-list-item>
+  <div>
+    <mat-checkbox [ngModel]="item.checked" (ngModelChange)="onChecked($event)">{{item.description}}</mat-checkbox>
+    <span class="modified-date"> {{item.lastModified | date}} </span>
+  </div>
+</mat-list-item>
